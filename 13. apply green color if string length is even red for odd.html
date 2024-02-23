@@ -1,0 +1,23 @@
+<html>
+  <head>
+    
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="id1"></div>
+    <script type="text/babel">
+        var ar = [10,21,33,24,54,65,89]
+
+        var strLngth = <div>
+            {
+                ar.map((a)=>{
+                    return <li style = {a%2==0?{color:'green'}:{color:'red'}}>{a}</li>
+                })
+            }</div>
+       
+        ReactDOM.render(strLngth,document.getElementById('id1'))
+</script>
+ </body>
+</html>

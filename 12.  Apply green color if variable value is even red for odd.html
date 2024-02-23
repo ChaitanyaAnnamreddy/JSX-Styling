@@ -1,0 +1,19 @@
+<html>
+  <head>
+    
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="id1"></div>
+    <script type="text/babel">
+
+        var c = prompt()
+        var d = <div>
+                    <h1 style={c>=0 ? {color:'green'}:{color:'red'}}>{c}</h1>
+                </div>
+        ReactDOM.render(d,document.getElementById('id1'))
+</script>
+ </body>
+</html>

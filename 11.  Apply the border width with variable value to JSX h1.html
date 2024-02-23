@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 
+    imported 2 libraries
+    1. react - UI ni create cheyadaniki and it gives functions to generate UI
+    2. react-dom - create and generate chesina UI ni html lo insert cheydaniki
+    </title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="id1"></div>
+    <script type="text/babel">
+
+        var color1 = 'lightBlue'
+        var borWidth = '23'
+        var bc1 = 'black'
+
+        var colorName = <div>
+                           <h1 style={{border:`${borWidth}px solid`}}>Chaitanya</h1>
+                         </div>
+        
+
+        ReactDOM.render(colorName,document.getElementById('id1'))
+
+
+    </script>
+
+  </body>
+</html>
